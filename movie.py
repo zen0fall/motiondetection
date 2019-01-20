@@ -8,10 +8,10 @@ Created on Thu Mar 29 20:54:33 2018
 import argparse
 import smtplib
 from datetime import datetime
-from email.MIMEMultipart import MIMEMultipart
-from email.MIMEText import MIMEText
-from email.MIMEBase import MIMEBase
-from email import Encoders
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+import email.encoders as Encoders
 
 fromaddr = 'yourmail@gmail.com' #mail from , your mail address
 toaddrs  = 'anymail@anything.com'  # can be list of strings
@@ -51,7 +51,7 @@ msg.attach(part)
 #
 # Email body
 #
-body = 'This pic has been captured due to a motion just detected.'
+body = 'This movie has been captured due to a motion which was just detected.'
 body += '\nTime: %s' % str(datetime.now())
 msg.attach(MIMEText(body, 'plain'))
 
