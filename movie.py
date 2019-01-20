@@ -1,9 +1,4 @@
-"""
-Created on Thu Mar 29 20:54:33 2018
-
-@author:zenofall
-"""
-
+#author:zenofall
 
 import argparse
 import smtplib
