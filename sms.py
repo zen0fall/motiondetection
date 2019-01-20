@@ -1,11 +1,9 @@
 # Sending sms in combination
 # with Motion surveillance software
 #
-"""
-Created on Thu Mar 29 20:00:33 2018
 
-@author:zenofall
-"""
+#author:zenofall
+
 
 import smtplib
 from datetime import datetime
